@@ -11,7 +11,7 @@ theme_settings:
   # Header and footer text
   header_text: >
      <h1>develop the web</h1>
-     <p>i'm a smol bean</p>
+     <p>i'm just small potatoes at the moment</p>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with love.
@@ -26,7 +26,7 @@ theme_settings:
   flickr:
   github: jaredtw # github profile name, e.g. "madebymunsters"
   google_plus:
-  instagram: instagram.com/lasergoth
+  instagram: lasergoth
   linkedin:  # Full URL
   pinterest:
   reddit:
@@ -34,7 +34,7 @@ theme_settings:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: twitter.com/fashionhotstyle
+  twitter: fashionhotstyle
   wordpress:
   youtube:
 
