@@ -27,11 +27,37 @@ This assignment was an introduction to using a real-time database(firebase) to s
 
 ## Solution
 
-1. After manual data entry, created factory service called Room.js centered around '.child()' method to list rooms from firebase by index using simple function that returns array. Created a HomeCtrl.js to manage the '$scope' of the homepage with injected dependency of Room.js. Defined $state in app to use {{}} syntax in html.
+1. After manual data entry, created factory service called Room.js centered around '.child()' method to list rooms from firebase by index using simple function that returns array. Created a HomeCtrl.js to manage the '$scope' of the homepage with injected dependency of Room.js. Defined $state in app to use {{}} syntax in html. Defined some css to manage appearance and readability.
 
-2. 
+2. Created modal to animate open on button click for user to create room using '$uibModal' bootstrap method, stored created room info with '$log' method. Created modal instance controller to manage user input. Created a simple html document for the modal and styled with css.
+
+3. After data input in firebase, added 'ng-click' method to add user functionality to the listed rooms. Used 'orderByChild()' to define each message set for each room. Styled the page to have the rooms listed on one side and the messages listed on the other.
+
+4. Used '$cookies' to store a username on page open with '.ok()' method which would require the modal to stick until user inputs a value.
+
+5. Created a send function in message service that would '.push' a message bound with the username and timestamp to the array in firebase, and would populate in the room's messages instantaneously. Bound username with stored cookies by injecting '$cookies' dependency and referencing the current user.
 
 ## Results
+1. Display of Room List
+{:.center}
+![]({{ site.baseurl }}/img/room_list.png)
 
+2. Room Creation Modal
+{:.center}
+![]({{ site.baseurl }}/img/create_room_modal.png)
+
+3. Messages in Specific RoomI
+{:.center}
+![]({{ site.baseurl }}/img/bloc-chat.png)
+
+4. Username Modal View
+{:.center}
+![]({{ site.baseurl }}/img/username_modal.png)
+
+5. Send Message Input
+{:.center}
+![]({{ site.baseurl }}/img/send_message.png)
 
 ## Conclusion
+
+This project was designed to "take the training wheels off" and though challenging proved to be very fun. The real challenge was making sure to console log my functionality so I could see where errors occured or didn't. Angular proves to be a bear but carefully linking the services and controllers proves it to be a very effective framework. Syntax has always been a struggle for me just with all the new terminology but I think it a small price to pay for mastery.
