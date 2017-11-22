@@ -10,7 +10,7 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <h1>Web Developer, </h1>
+     <h1>develop the web</h1>
      <p>i'm a smol bean</p>
   header_text_feature_image:
   footer_text: >
